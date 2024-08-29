@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess Board Memorizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="left-side">
+        <div class="controls">
+          <div class="perspective-buttons">
+            <button id="white-perspective" class="selected">
+              White Perspective
+            </button>
+            <button id="black-perspective">Black Perspective</button>
+          </div>
+          <div class="set-time">
+            <input
+              type="number"
+              id="timer-input"
+              placeholder="Enter time (sec)"
+            />
+            <button id="start-game">Start Game</button>
+          </div>
+        </div>
+      </div>
+      <div class="middle-part">
+        <div id="target-square">Find:</div>
+        <div id="time-left">Time Left: 0</div>
+        <div id="msg-box"></div>
+        <div class="board" id="chessboard"></div>
+        <div class="game-over">Game Over!</div>
+      </div>
+      <div class="right-side">
+        <div id="correct">Correct: 0</div>
+        <div id="wrong">Wrong: 0</div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
